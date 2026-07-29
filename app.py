@@ -253,11 +253,11 @@ c5.metric(
     vendedores
 )
 
-st.divider()
+#st.divider()
 
-st.info("✅ Dashboard cargado correctamente. En la siguiente parte agregaremos los gráficos y las tablas dinámicas.")
+#st.info("✅ Dashboard cargado correctamente. En la siguiente parte agregaremos los gráficos y las tablas dinámicas.")
 
-st.divider()
+#st.divider()
 
 # ==========================================================
 # GRAFICOS
