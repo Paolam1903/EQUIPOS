@@ -81,28 +81,6 @@ if "Fecha" in df.columns:
 # TERMINALES
 # ==========================================================
 
-productos_terminales = [
-
-    "KIT PREPAGO",
-
-    "FINANCIAMIENTO SERCOM",
-
-    "FINANCIAMIENTO SOMOS",
-
-    "FINANCIAMIENTO ALOCREDIT",
-
-    "FINANCIAMIENTO CREDIMINUTO",
-
-    "FINANCIADO",
-
-    "POSTPAGO EQUIPOS",
-
-    "EQUIPOS REPOSICIÓN",
-
-    "EQUIPOS REPOSICION"
-
-]
-
 df["ProductoDeVenta"] = (
     df["ProductoDeVenta"]
     .astype(str)
@@ -110,9 +88,17 @@ df["ProductoDeVenta"] = (
     .str.strip()
 )
 
-df = df[
-    df["ProductoDeVenta"].isin(productos_terminales)
-].copy()
+filtro_terminales = (
+    df["ProductoDeVenta"].str.contains(
+        "KIT PREPAGO|FINANCIAMIENTO|EQUIPOS REPOSIC|POSTPAGO|KIT FINANCIADO",
+        regex=True,
+        na=False
+    )
+)
+
+df = df[filtro_terminales].copy()
+
+df["Producto"] = "TERMINALES"
 
 # ==========================================================
 # CAMBIAR NOMBRE A TERMINALES
