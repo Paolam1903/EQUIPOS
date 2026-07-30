@@ -121,7 +121,7 @@ with col2:
 
     st.markdown("""
     <h1 style='margin-bottom:0'>
-    REPORTE DIARIO DE TERMINALES DEL 1 AL 28 DE JULIO
+    REPORTE DIARIO DE TERMINALES DEL 1 AL 29 DE JULIO
     </h1>
 
     <h4 style='color:gray;margin-top:0'>
