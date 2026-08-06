@@ -213,6 +213,22 @@ if vendedor != "Todos":
     df = df[df["NombreVendedor"] == vendedor]
 
 # ==========================================================
+# PRODUCTO DE VENTA
+# ==========================================================
+
+st.sidebar.subheader("📦 Producto de Venta")
+
+productos = sorted(df["ProductoDeVenta"].dropna().unique())
+
+seleccion = []
+
+for producto in productos:
+    if st.sidebar.checkbox(producto, value=True):
+        seleccion.append(producto)
+
+df = df[df["ProductoDeVenta"].isin(seleccion)]
+
+# ==========================================================
 # KPIs
 # ==========================================================
 
