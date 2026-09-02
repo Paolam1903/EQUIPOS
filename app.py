@@ -121,7 +121,7 @@ with col2:
 
     st.markdown("""
     <h1 style='margin-bottom:0'>
-    REPORTE DIARIO DE TERMINALES AL 31 DE AGOSTO
+    REPORTE DIARIO DE EQUIPOS AL 1 DE SEPTIEMBRE
     </h1>
 
     <h4 style='color:gray;margin-top:0'>
