@@ -121,7 +121,7 @@ with col2:
 
     st.markdown("""
     <h1 style='margin-bottom:0'>
-    REPORTE DIARIO DE EQUIPOS AL 10 DE NOVIEMBRE
+    REPORTE DIARIO DE EQUIPOS AL 11 DE NOVIEMBRE
     </h1>
 
     <h4 style='color:gray;margin-top:0'>
